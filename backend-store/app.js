@@ -12,7 +12,7 @@ const AppError = require('./utils/AppError');
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['https://velvet-music-store-front.onrender.com'];
 
 const logRequestBody = (req, res, next) => {
   console.log('Request Body:', req.body);

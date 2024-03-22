@@ -103,7 +103,7 @@ exports.Login = async (req, res, next) => {
         const cookieOptions = {
           expires: new Date(Date.now() + 60 * 60 * 1000),
           httpOnly: true,
-          secure: false
+          secure: true
         };
         res.cookie('jwt', token, cookieOptions);
         return res.status(200).json({
